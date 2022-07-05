@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document-ARRAY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="array.js"></script>
+</head>
+<body>
+    <div style="position: relative; background-color:aquamarine;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">This Page</a></li>
+        
+        </ul>
+    </div>
+    <div>
+        <h2>javaScript program-10</h2>
+        <u><p>Interchange Two Array</p></u>
+        <table>
+            <tr>
+                <td> <label for="text">Enter Array Limit</label></td>   
+                <td><input type="text" id="ArrayLimit"> </td>
+                <td><button onclick="interchangeArray()">Submit</button></td>
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td><label for="array" id="arrayDisplaylOne"></label></td>
+                <td><span id="arrayOne"></span></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="arrayDisplayTwo"></label></td>
+                <td><span id="arrayTwo"></span></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="arrayIntDisplaylOne"></label></td>
+                <td><span id="arrayIntOne"></span></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="arrayIntDisplaylTwo"></label></td>
+                <td><span id="arrayIntTwo"></span></td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>javaScript program-11</h2>
+        <u><p>Even Numbers in an Array</p></u>
+        <table>
+            <tr>   
+                <td> <label for="text">Enter the array limit</label></td>   
+                <td><input type="text" id="ArrayLimitEven"> </td>
+                <td><button onclick="arraySearchEven()">Submit</button></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="searchArrayDisplay"></label></td>
+                <td><span id="searchArray"></span></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="searchArrayResult"></label></td>
+                <td><span id="searchArrayEvenResult"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>javaScript program-12</h2>
+        <u><p>Array in descending order</p></u>
+        <table>
+            <tr>   
+                <td> <label for="text">Enter the array limit</label></td>   
+                <td><input type="text" id="ArrayLimitDescend"> </td>
+                <td><button onclick="arrayDescending()">Submit</button></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="descendArraylabel"></label></td>
+                <td><span id="descendArray"></span></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="descendArrayResultLabel"></label></td>
+                <td><span id="descendArrayResult"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>javaScript program-13</h2>
+        <u><p>PALINDROME</p></u>
+        <table>
+            <tr>   
+                <td> <label for="text">Enter the String</label></td>   
+                <td><input type="text" id="ArrayPalindrome"> </td>
+                <td><button onclick="arrayPaindrome()">Submit</button></td>
+                <td><label for="array" id="palinArrayResultLabel"></label></td> 
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>javaScript program-14</h2>
+        <u><p>TWO DIMENSIONAL ARRAY</p></u>
+        <table>
+            <tr>   
+                <td> <label for="text">Enter the array limit</label></td>   
+                <td><input type="text" id="arrayLimit2D"> </td>
+                <td><button onclick="array2D()">Submit</button></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="2dArrayOneLabel"></label></td>
+                <td><span id="2dArrayOne"></span></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="2dArrayTwoLabel"></label></td>
+                <td><span id="2dArrayTwo"></span></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="labelSum2dArray"></label></td>
+                <td><span id="2dArrayResult"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>javaScript program-15</h2>
+        <u><p>Array Using multiple Fuunctions</p></u>
+        <table>
+            <tr>   
+                <td> <label for="text">Enter the array limit</label></td>   
+                <td><input type="text" id="ArrayLimitFunc"> </td>
+                <td><button onclick="arrayUsingMultFunctions()">Submit</button></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="funcArrayDisplay"></label></td>
+                <td><span id="funcArray"></span></td>
+            </tr>
+           
+        </table>
+    </div>
+
+    <div>
+        <h2>javaScript program-16</h2>
+        <u><p>Prime Number</p></u>
+        <table>
+            <tr>   
+                <td> <label for="text">Enter a Number</label></td>   
+                <td><input type="text" id="NumberPrime"> </td>
+                <td><button onclick="primeNumber()">Submit</button></td>
+                <td><label for="prime" id="primeResultLabel"></label></td> 
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <div>
+        <h2>javaScript program-17</h2>
+        <u><p>Mathematical Operations</p></u>
+        <table>
+            <tr>   
+                <td> <label for="text">Enter First Number</label></td>   
+                <td><input type="text" id="NumberFirstOpe"> </td>
+            </tr>
+            <tr>
+                <td> <label for="text">Enter Second Number</label></td>   
+                <td><input type="text" id="NumberSecondOpe"> </td>
+                <td><button onclick="divisionOpe()">/</button></td>
+                <td><button onclick="ProductOpe()">X</button></td>
+                <td><button onclick="subsractionOpe()">-</button></td>
+                <td><button onclick="addOpe()">+</button></td>
+            </tr>
+            <tr>
+                <td><span id="resLabel"></span></td>
+                <td><span id="resOpe"></span></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+        <h2>javaScript program-18</h2>
+        <u><p>Weighted Average</p></u>
+        <table>
+            <tr>   
+                <td> <label for="text">Enter mark Obtained for written test</label></td>   
+                <td><input type="text" id="writtenMark"> </td>
+            </tr>
+            <tr>   
+                <td> <label for="text">Enter maork Otained for Lab Exam</label></td>   
+                <td><input type="text" id="labMark"> </td>
+            </tr>
+            <tr>   
+                <td> <label for="text">Enter maork Otained for Assignments </label></td>   
+                <td><input type="text" id="asignmentMark"> </td>
+                <td><button onclick="weightedAvg()">Submit</button></td>
+                <td><label for="avg" id="weightedAvg"></label></td> 
+            </tr>
+            <tr>
+                
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h2>javaScript program-19</h2>
+        <u><p>Income Tax</p></u>
+        <table>
+            <tr>   
+                <td> <label for="text">Enter Your Annual Income</label></td>   
+                <td><input type="text" id="annualIncome"> </td>
+                <td><button onclick="findIncomeTax()">Submit</button></td>
+                <td><label for="prime" id="incomeTaxIs"></label></td> 
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>javaScript program-20</h2>
+        <u><p>Pattern</p></u>
+        <label for="text">Enter a limit</label>
+        <input type="text" id="patternLimitOne" name="text">
+        <button onclick="patternCont()">Submit</button><br>
+        <span id="forPatternOne"></span>
+    </div>
+    <div>
+        <h2>javaScript program-21</h2>
+        <u><p>Multiplication of adjascent Elements in an Array</p></u>
+        <table>
+            <tr>   
+                <td> <label for="text">Enter the array limit</label></td>   
+                <td><input type="text" id="ArrayLimitAdj"> </td>
+                <td><button onclick="arrayAdjMult()">Submit</button></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="searchArrayDisplay"></label></td>
+                <td><span id="searchArray"></span></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="ArrayLabel"></label></td>
+                <td><span id="AdjDisp"></span></td>
+            </tr>
+            <tr>
+                <td><label for="array" id="ArrayAdjResLabel"></label></td>
+                <td><span id="AdjDispResult"></span></td>
+            </tr>
+        </table>
+    </div>
+
+
+ 
+
+
+
+
+
+</body>
+</html>

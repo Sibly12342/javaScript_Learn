@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>javaScript</title>
+</head>
+<body>
+    <div style="position: relative; background-color: aquamarine;">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="array.html">Next Page</a></li>
+        
+        </ul>
+    </div>
+
+    <div> 
+        <h2>Java Script Program-1</h2>
+        <u><p>Output the character</p></u>
+        <label for="input">Enter a Character</label>
+        <input type="text" name="input1" id="input1">
+        <button onclick="programOne()">Submit</button>
+    </div>
+    <div>
+        <h2>Java Script Program-2</h2>
+        <U><p>Sum of two numbers</p></U>
+        <label for="text">Enter a Number</label>
+        <input type="text" id="num1"><br>
+        <label for="text">Enter a Number</label>
+        <input type="text" id="num2">
+        <button onclick="programTwo()">Submit</button>
+    </div>
+    <div>
+        <h2>Java Script Program-3</h2>
+        <u><p>Simple Interest</p></u>
+        <table>
+            <tr>
+                <td><label for="text">Enter the principal amount</label></td>
+                <td><input type="text" id="textAmount"><br></td>
+            </tr>
+            <tr>
+                <td><label for="text">Annual rate of interest</label></td>
+                <td><input type="text" id="textInterset"><br></td>
+            </tr>
+            <tr>
+                <td><label for="text">Duration in years</label></td>
+                <td><input type="text" id="textYears"></td>
+                <td><button onclick="simpleInterest()">Submit</button></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>javaScript program-4</h2>
+        <u><p>Passed or failed</p></u>
+        <label for="text">Dear Student, Enter your mark</label>
+        <input type="text" name="text" id="textMark">
+        <button onclick="checkPassed()">Submit</button>
+        <span id="resultSet"></span>
+
+    </div>
+    <div>
+        <h2>javaScript program-5</h2>
+        <u><p>Grade Obtained</p></u>
+        <label for="text">Dear Student, Enter total your mark</label>
+        <input type="text" name="text" id="textMarkTotal">
+        <button onclick="checkGrade()">Submit</button>
+        <span id="gradeSet"></span>
+    </div>
+    <div>
+        <h2>javaScript program-6</h2>
+        <u><p>Find Day </p></u>
+        <label for="text"> Enter the day count</label>
+        <input type="text" name="text" id="textDay">
+        <button onclick="checkDay()">Submit</button>
+        <span id="daySet"></span>
+    </div>
+    <div>
+        <h2>javaScript program-7</h2>
+        <u><p>Multiplication Table</p></u>
+        <table>
+            <tr>
+                <td><label for="text"> Enter a number to get the Multiplication Table</label></td>
+                <td><input type="text" name="text" id="textNumMult"></td>
+                <td><button onclick="multiplicationTable()">Submit</button></td>
+                </tr>
+                <tr>
+                <td><span id="multTableSet"></span></td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h2>javaScript program-8-A</h2>
+        <u><p>sum of all the odd numbers upto a given limit</p></u>
+        <label for="text">Enter a limit</label>
+        <input type="text" id="oddLimit" name="text">
+        <button onclick="findOddSum()">Submit</button><br>
+        <span id="sumforOdd"></span>
+    </div>
+    <div>
+        <h2>javaScript program-8-B</h2>
+        <u><p>sum of all the odd numbers upto a given limit-Only Sum</p></u>
+        <label for="text">Enter a limit</label>
+        <input type="text" id="oddLimitSecond" name="text">
+        <button onclick="findOddSumSecond()">Submit</button><br>
+        <span id="sumforOddSecond"></span>
+    </div>
+    <div>
+        <h2>javaScript program-9</h2>
+        <u><p>Pattern</p></u>
+        <label for="text">Enter a limit</label>
+        <input type="text" id="patternLimitOne" name="text">
+        <button onclick="patternOne()">Submit</button><br>
+        <span id="forPatternOne"></span>
+    </div>
+    
+    <script src="programs.js"></script>
+</body>
+</html>
