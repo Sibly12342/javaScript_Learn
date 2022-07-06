@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="objects.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="array.html">Arrays</a></li>
+        <li><a href="#">This Page</a></li>
+    
+    </ul>
+</div>
+
+
+
+
+
+
+<div>
+    <h2>Program-24</h2>
+    <p><u>Area</u></p>
+    <table>
+        <tr>
+            <td><button onclick="run(1)">CIRCLE</button></td>
+            <td> <button onclick="run(2)">SQUARE</button></td>
+            <td><button onclick="run(3)">RECTANGLE</button></td>
+            <td><button onclick="run(4)">TRIANGLE</button></td>
+        </tr>
+        
+        <tr>
+            <td><span id="inpSpan"></span></td>
+        </tr>
+        
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <h2>Program-25</h2>
+    <p><u>Search Book reading Status</u></p>
+    <table style="border: 1px solid; padding: 10px;">
+        <tr>
+            <td>
+            <table style="border: 1px solid; padding: 10px;">
+                <tr>
+                    <td><label for="text">Enter Book Name</label></td>
+                    <td><input type="text" id="bookName"></td>
+                </tr>
+                <tr>
+                    <td><label for="text">Enter auhtor Name</label></td>
+                    <td><input type="text" id="authorName"></td>
+                </tr>
+                <tr>
+                    <td><label for="text">Enter Book Name</label></td>
+                    <td>
+                        <input type="radio" name="status" id="status1" value="true">true
+                        <input type="radio" name="status" id="status2" value="false">false
+                    </td>
+                    <td> 
+                        <button onclick="addLibraryElement()" style="width: 100%;">ADD LIBARRAY BOOK</button>
+                    </td>
+                </tr>
+            </table>
+            </td>
+        <tr>
+            <td>
+            <table style="border: 1px solid; margin-top: 20px; padding: 10px; width: 100%;">
+                <tr>
+                    <td>
+                        <label for="text">Enter a book by Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="searchBook">
+                    </td>
+                    <td>
+                        <button onclick="findBookStatus()">SEARCH</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="searchresultLib"></span>
+                    </td>
+                </tr>
+
+            </table>
+            </tr>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <h2>Prgram -26</h2>
+    <p>Try Catch</p>
+    <table>
+        <tr>
+            <td><input type="text" id="tryString"></td>
+            <td>
+                <button onclick="funcTry()" id="btn28pgm">Submit</button>
+            </td>
+            <td>
+
+            </td>
+    </tr>
+    </table>
+</div>
+<div>
+    <h2>Prgram -27</h2>
+    <p>Try Catch Throw</p>
+    <table>
+        <tr>
+            <td><input type="text" id="throwString"></td>
+            <td>
+                <button onclick="funcThrow()" id="btn28pgm">Submit</button>
+            </td>
+            <td><span id="resThrow"></span></td>
+            <td>
+
+            </td>
+    </tr>
+    </table>
+</div>
+
+<div>
+    <h2>Prgram -28</h2>
+    <p>Constructor</p>
+    <table>
+        <tr>
+            <td>
+                <button>Submit</button>
+            </td>
+            <td>
+
+            </td>
+    </tr>
+    </table>
+</div>
+<div>
+    <h2>Prgram -29</h2>
+    <p>Array and call back</p>
+    <table>
+        <tr>
+            <td><input type="text" id="arRol"></td>
+            <td>
+                <button onclick="pgm28()" id="btn28pgm">Submit</button>
+            </td>
+            <td>
+
+            </td>
+    </tr>
+    </table>
+</div>
+
+
+
+
+
+<body>
+    
+</body>
+</html>

@@ -392,6 +392,7 @@ function dispArray(arrayOne)
         document.getElementById("AdjDispResult").innerHTML=arrayTwo
  }
 
+ 
 function divisionOpe(){
     let first=parseFloat(document.getElementById("NumberFirstOpe").value)
     let second=parseFloat(document.getElementById("NumberSecondOpe").value)
@@ -432,3 +433,189 @@ function addOpe(){
 
 
 
+// 2d array using multiple functions starts
+
+function array2dMain(){
+    
+        let arraylimit=Number(document.getElementById("arrayLimit2dSecond").value)
+        getArray2d(arraylimit);
+}
+
+
+
+function getArray2d(arraylimit){
+
+    let arrayOne=[], arrayTwo=[]
+ 
+    for(let i=0;i<arraylimit;i++)
+    {
+        arrayOne[i]=[]
+
+        for(let j=0;j<arraylimit;j++)
+        {
+            let val=Number(prompt("Enter the FIRST array elements"))
+            arrayOne[i][j]=val
+        }
+    }
+
+    for(let i=0;i<arraylimit;i++)
+    {
+        arrayTwo[i]=[]
+
+        for(let j=0;j<arraylimit;j++)
+        {
+            let val=Number(prompt("Enter the SECOND array elements"))
+            arrayTwo[i][j]=val
+        }
+    }
+
+    addArray2d(arrayOne,arrayTwo,arraylimit);
+
+}
+
+function addArray2d(arrayOne,arrayTwo,arraylimit){
+    let arrayThree=[]
+
+    for(let i=0;i<arraylimit;i++)
+    {
+        arrayThree[i]=[]
+
+        for(let j=0;j<arraylimit;j++)
+        {
+            arrayThree[i][j]=arrayOne[i][j]+arrayTwo[i][j]
+        }
+    }
+    dispArray2d(arrayOne,arrayTwo,arrayThree,arraylimit);
+}
+
+function dispArray2d(arrayOne,arrayTwo,arrayThree,arraylimit){
+    
+    document.getElementById("2dArraySecondOneLabel").innerHTML="First array"
+    for(let i=0;i<arraylimit;i++)
+    {
+        for(let j=0;j<arraylimit;j++)
+        {
+            document.getElementById("2dArraySecondOne").innerHTML+=arrayOne[i][j]+" "
+        }
+        document.getElementById("2dArraySecondOne").innerHTML+="<br> "
+
+    }
+    document.getElementById("2dArraySecondTwoLabel").innerHTML="Second array"
+    for(let i=0;i<arraylimit;i++)
+    {
+        for(let j=0;j<arraylimit;j++)
+        {
+            document.getElementById("2dArraySecondTwo").innerHTML+=arrayTwo[i][j]+" "
+        }
+        document.getElementById("2dArraySecondTwo").innerHTML+="<br>"
+
+    }
+
+    document.getElementById("labelSum2dArraySecond").innerHTML="Array after addition :"
+    for(let i=0;i<arraylimit;i++)
+    {
+        for(let j=0;j<arraylimit;j++)
+        {
+            document.getElementById("2dArraySecondResult").innerHTML+=arrayThree[i][j]+" "
+        }
+        document.getElementById("2dArraySecondResult").innerHTML+="<br> "
+
+    }
+    
+    console.log(arrayOne)
+    console.log(arrayTwo)
+    console.log(arrayThree)
+    
+
+}
+
+
+
+// add two 2-d array using multiple functions
+
+
+
+
+
+
+
+//two 2-d array displayy - starts
+
+
+
+function array2dMainfunc(){
+    
+    let arraylimit=Number(document.getElementById("arrayLimit2dSecondfunc").value)
+    getArray2dfunc(arraylimit);
+}
+
+
+
+function getArray2dfunc(arraylimit){
+
+    let arrayOne=[], arrayTwo=[]
+
+    for(let i=0;i<arraylimit;i++)
+    {
+        arrayOne[i]=[]
+
+        for(let j=0;j<arraylimit;j++)
+        {
+            let val=Number(prompt("Enter the FIRST array elements"))
+            arrayOne[i][j]=val
+        }
+    }
+
+    for(let i=0;i<arraylimit;i++)
+    {
+        arrayTwo[i]=[]
+
+        for(let j=0;j<arraylimit;j++)
+        {
+            let val=Number(prompt("Enter the SECOND array elements"))
+            arrayTwo[i][j]=val
+        }
+    }
+    dispArray2dfunc(arrayOne,arrayTwo,arraylimit);
+
+}
+
+
+
+
+function dispArray2dfunc(arrayOne,arrayTwo,arraylimit){
+
+    document.getElementById("2dArraySecondOneLabelfunc").innerHTML="First array"
+    document.getElementById("2dArraySecondOnefunc").innerHTML=""
+    for(let i=0;i<arraylimit;i++)
+    {
+        for(let j=0;j<arraylimit;j++)
+        {
+            document.getElementById("2dArraySecondOnefunc").innerHTML+=arrayOne[i][j]+" "
+        }
+        document.getElementById("2dArraySecondOnefunc").innerHTML+="<br> "
+
+    }
+    document.getElementById("2dArraySecondTwoLabelfunc").innerHTML="Second array"
+    document.getElementById("2dArraySecondTwofunc").innerHTML=""
+    for(let i=0;i<arraylimit;i++)
+    {
+        for(let j=0;j<arraylimit;j++)
+        {
+            document.getElementById("2dArraySecondTwofunc").innerHTML+=arrayTwo[i][j]+" "
+        }
+        document.getElementById("2dArraySecondTwofunc").innerHTML+="<br>"
+
+    }
+
+
+    console.log(arrayOne)
+    console.log(arrayTwo)
+
+
+
+}
+
+
+
+//two 2-d array displayy - ends
